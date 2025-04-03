@@ -3,3 +3,56 @@
     padding: 0;
     box-sizing: border-box;
 } */
+* {
+  font-family: "Raleway";
+}
+
+body {
+  display: flex;
+  background-image: url(assets/image\ 4.png);
+  background-size: cover;
+  flex-direction: column;
+}
+#page {
+  width: 800px;
+  padding: 10px;
+  background-color: #d8d2a4f6;
+  border-radius: 24px;
+  margin: 48px auto;
+}
+img {
+  border-radius: 16px;
+  width: 600px;
+  margin-left: 100px;
+}
+h1,
+p {
+  text-align: center;
+}
+h2,
+ul,
+ol {
+  margin-left: 100px;
+  font-size: 20px;
+  color: #000000;
+}
+footer {
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  color: #d8d2a4f6;
+}
+* {
+  line-height: 1.5; /* Define o espaçamento entre as linhas */
+}
+
+a {
+  color: #eef0f1; /* Cor do texto */
+   /* Remove o sublinhado */
+  font-weight: bold; /* Deixa o texto em negrito */
+}
+
+a:hover {
+  color: #bd891b; /* Cor ao passar o mouse */
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
