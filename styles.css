@@ -12,18 +12,28 @@ body {
   background-image: url(assets/image\ 4.png);
   background-size: cover;
   flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Faz com que o fundo fique fixo enquanto você rola a página */
 }
 #page {
-  width: 800px;
+  max-width: 100%; 
+  /* min-width: 50vh; */
+  width: 45vw;
   padding: 10px;
   background-color: #d8d2a4f6;
   border-radius: 24px;
   margin: 48px auto;
 }
 img {
+  display: block;
+  margin: 0 auto;
   border-radius: 16px;
   width: 600px;
-  margin-left: 100px;
+  max-width: 100%; 
+  height: auto;
 }
 h1,
 p {
@@ -55,4 +65,21 @@ a {
 a:hover {
   color: #bd891b; /* Cor ao passar o mouse */
   text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+@media (max-width: 768px) {
+  #page {
+    padding: 20px;
+    margin: 24px auto;
+  }
+  img {
+    width: 100%;
+    margin-left: 0;
+  }
+  h2, ul, ol {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+}
+h1{
+  font-size: clamp(1.5rem, 5vw, 3rem);
 }
